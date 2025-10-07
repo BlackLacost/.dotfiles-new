@@ -12,6 +12,7 @@ alias cddf="cd ~/.dotfiles/"
 alias dfe="nvim ~/.dotfiles/"
 alias o='xdg-open'
 alias lg='lazygit'
+alias y='yazi'
 # alias rcgm="rclone mount google: /home/ilya/cloud/google/ --vfs-cache-mode full --vfs-cache-max-size 200G --vfs-cache-poll-interval 5m --vfs-cache-max-age 168h --log-level INFO --log-file /tmp/rclone.log &"
 # alias rcgu="umount ~/cloud/google/"
 # alias rcmm="rclone mount mailru: /home/ilya/cloud/mailru --vfs-cache-mode full --vfs-cache-max-size 200G --vfs-cache-poll-interval 5m --vfs-cache-max-age 168h --log-level INFO --log-file /tmp/rclone.log &"
