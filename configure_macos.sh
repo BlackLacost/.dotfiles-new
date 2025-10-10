@@ -124,10 +124,11 @@ setup_mac_using_brew_cask() {
     # aldente torrent
     alt-tab
     betterdisplay
-    # brave-browser
+    brave-browser
     chatgpt
     font-jetbrains-mono-nerd-font
     geekbench
+    # jetbrains-toolbox # vpn
     hammerspoon
     iina
     karabiner-elements
@@ -200,6 +201,6 @@ fi
 # # Add homebrew to path for the rest of the script
 # eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# setup_mac_using_brew
-# setup_mac_using_brew_cask
+setup_mac_using_brew
+setup_mac_using_brew_cask
 setup_mac_using_app_store
