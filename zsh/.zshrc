@@ -79,7 +79,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  aliases
   git
+  fzf
+  minikube
   spring
   zsh-autosuggestions
 )
@@ -123,6 +126,12 @@ if [[ -r "$HOME/.config/aliases.sh" ]]; then
   source "$HOME/.config/aliases.sh"
 fi
 
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/ilya/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
