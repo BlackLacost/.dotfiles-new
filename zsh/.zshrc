@@ -101,13 +101,6 @@ fi
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='nvim'
-fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
@@ -122,10 +115,13 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-if [[ -r "$HOME/.config/aliases.sh" ]]; then
-  source "$HOME/.config/aliases.sh"
-fi
 
+local filepath="$HOME/.config/zsh/main.sh"
+if [[ -r "$filepath" ]]; then
+  source "$filepath"
+else
+  echo "ℹ️  Info: $name config not found at '$filepath'." >&2
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
