@@ -27,6 +27,7 @@ load_config_file() {
   return 0
 }
 
+load_config_file "$HOME/.config/zsh/paths.sh" "paths"
 load_config_file "$HOME/.config/zsh/aliases.sh" "aliases"
 load_config_file "$HOME/.config/zsh/exports.sh" "exports"
 check_command "zoxide" && load_config_file "$HOME/.config/zsh/zoxide.sh" "zoxide" 
