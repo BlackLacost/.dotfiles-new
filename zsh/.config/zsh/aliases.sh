@@ -15,6 +15,7 @@ alias lg='lazygit'
 alias y='yazi'
 alias m='minikube'
 alias k='kubectl'
+compdef __start_kubectl k
 # alias rcgm="rclone mount google: /home/ilya/cloud/google/ --vfs-cache-mode full --vfs-cache-max-size 200G --vfs-cache-poll-interval 5m --vfs-cache-max-age 168h --log-level INFO --log-file /tmp/rclone.log &"
 # alias rcgu="umount ~/cloud/google/"
 # alias rcmm="rclone mount mailru: /home/ilya/cloud/mailru --vfs-cache-mode full --vfs-cache-max-size 200G --vfs-cache-poll-interval 5m --vfs-cache-max-age 168h --log-level INFO --log-file /tmp/rclone.log &"
@@ -27,6 +28,7 @@ alias k='kubectl'
 
 alias nvime="nvim ~/.config/nvim"
 alias ghc='gh repo list | fzf | awk '\''{print $1}'\'' | xargs gh repo clone'
-alias gghc='glgg --all | fzf | cut -d"'\''" -f2 | cut -d" " -f1 | tr -d "\n" | xsel -bi'
+# alias gghc='glgg --all | fzf | cut -d"'\''" -f2 | cut -d" " -f1 | tr -d "\n" | xsel -bi'
+alias gghc='glgg --all | fzf | cut -d"'\''" -f2 | cut -d" " -f1 | tr -d "\n" | pbcopy'
 alias gcohc='git checkout `glgg --all | fzf | cut -d"'\''" -f2 | cut -d" " -f1 | tr -d "\n"`'
 
