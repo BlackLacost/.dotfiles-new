@@ -80,6 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   aliases
+  eza
   git
   fzf
   minikube
@@ -131,3 +132,5 @@ fpath=(/Users/ilya/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+source <(kubectl completion zsh)
