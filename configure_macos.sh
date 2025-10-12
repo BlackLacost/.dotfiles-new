@@ -96,6 +96,7 @@ setup_mac_using_brew() {
     mas
     neovim
     ollama
+    pgcli
     # openai-whisper
     # openjdk
     # pass
