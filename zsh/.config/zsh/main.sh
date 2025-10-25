@@ -24,6 +24,7 @@ load_config_file() {
   fi
 
   source "$filepath"
+  # echo "✅  Success: '$filepath' config loaded." >&2
   return 0
 }
 

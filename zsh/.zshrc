@@ -134,3 +134,8 @@ compinit
 # End of Docker CLI completions
 
 source <(kubectl completion zsh)
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/ilya/.lmstudio/bin"
+# End of LM Studio CLI section
+

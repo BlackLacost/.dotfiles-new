@@ -93,6 +93,8 @@ setup_mac_using_brew() {
     # fswatch
     fzf
     gh
+    libpq   # postgresql client tools
+    kcat    # kafka cat
     mas
     neovim
     ollama
@@ -133,6 +135,8 @@ setup_mac_using_brew_cask() {
     hammerspoon
     iina
     karabiner-elements
+    keepassxc
+    lens                # Kubernetes IDE
     libreoffice
     linearmouse
     # little-snitch torrent
@@ -157,15 +161,15 @@ setup_mac_using_app_store() {
   if confirm_update "Install App Store applications"; then
     local apps=(
       937984704   # Amphetamine
-      1091189122  # Bear
-      571213070   # DaVinci Resolve
+      # 1091189122  # Bear
+      # 571213070   # DaVinci Resolve
       1322465647  # Disk-O:
       # 1445910651  # Dynamo ads blocker for Safari
       408981434   # iMovie
       409183694   # Keynote
       409203825   # Numbers
       409201541   # Pages
-      6714467650  # Perplexity
+      # 6714467650  # Perplexity
       # 1289119450  # URL Linker for Safari
       747648890   # Telegram
       585829637   # Todoist
